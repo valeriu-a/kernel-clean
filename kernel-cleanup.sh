@@ -9,7 +9,7 @@ echo -e "\nThe kernel version you are running is '$KERNEL_VERS'.\n"
 
 if [ -z "$KERNEL_REM_LIST" ]
   then
-        echo -e "No kernel packages to remove." && exit
+        echo -e "No kernel packages to remove.\n" && exit
 else
         echo -e "You can remove the following kernel packages:"
         echo -e "$KERNEL_REM_LIST\n"
@@ -24,5 +24,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]
     sudo apt-get --yes clean
     sudo apt-get update
   else
-    echo -e "\n\nbye bye"
+    echo -e "\n\nbye bye\n"
 fi

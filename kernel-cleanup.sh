@@ -24,5 +24,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]
     sudo apt-get --yes clean
     sudo apt-get update
   else
-    echo -e "\n\nbye bye\n"
+    echo -e "\n\nBye bye\n"
 fi
